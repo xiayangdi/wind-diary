@@ -18,7 +18,7 @@ def get_markdown_list(name):
     result = "## %s"%name
     dir_base = 'content/%s/'%name
     g = os.walk(dir_base)
-    for dirpath,dirnames,filenames in g:
+    for dirpath,_,filenames in g:
         filenames = sorted(filenames)
         result += '\n'
         for filename in filenames:
