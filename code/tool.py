@@ -24,7 +24,9 @@ def get_markdown_list(name):
         for filename in filenames:
             if filename.endswith('.md'):
                 filepath = os.path.join(dirpath, filename)
-                result += "* [{0}]({1})".format(filename[:-3],filepath)+'\n'
+                n = filename[:-3].replace(" ","&nbsp;")
+                p = filepath.replace(" ","&nbsp;")
+                result += "* [{0}]({1})".format(n,p)+'\n'
 
     return result
 
