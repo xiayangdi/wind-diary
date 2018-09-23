@@ -32,7 +32,7 @@ def write_content(file_handle,content):
     file_handle.write(content+'\n\n')
 
 def create_summary():
-    with open('./SUMMARY1.md','w',encoding='utf-8') as f:
+    with open('./SUMMARY.md','w',encoding='utf-8') as f:
         write_content(f,'# 目录')
         write_content(f,get_markdown_list("读书"))
         write_content(f,get_markdown_list("日记"))
