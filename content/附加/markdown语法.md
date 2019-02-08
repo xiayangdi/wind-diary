@@ -1,8 +1,8 @@
 ---
-description: markdown语法
+description: Markdown语法
 ---
 
-# 第二章：MarkDown的一些标签
+# Markdown语法
 
 # Heading 1
 
